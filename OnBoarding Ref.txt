@@ -1,0 +1,9 @@
+https://blog.openreplay.com/multi-step-forms-with-transition-effects-in-react
+https://blog.logrocket.com/animate-react-app-animxyz/
+
+// For UI
+https://www.hyperui.dev/components/application-ui/steps
+https://www.floatui.com/components/inputs/
+
+// Last Resort - Very Hard
+https://blog.devgenius.io/create-a-multi-step-form-with-reactjs-322aa97a2968
