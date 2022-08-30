@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import OnboardContext from '../../store/onboard';
 
 const ForthStepForm = () => {
+  // console.log('On 4 Step');
+  const ctx = useContext(OnboardContext);
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+
+    ctx.nextStep();
+  };
+
   return (
     <div className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto flex flex-col justify-center items-center text-center">
@@ -22,7 +32,10 @@ const ForthStepForm = () => {
         </p>
       </div>
 
-      <form action="" className="max-w-md mx-auto mt-8 mb-0 space-y-4">
+      <form
+        onSubmit={formSubmitHandler}
+        className="max-w-md mx-auto mt-8 mb-0 space-y-4"
+      >
         <div className="flex items-center justify-between">
           <button
             type="submit"

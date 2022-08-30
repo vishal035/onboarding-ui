@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useContext, useRef } from 'react';
+import OnboardContext from '../../store/onboard';
 
 const SecondStepForm = () => {
+  // console.log('On 2 Step');
+  const enteredWorkspaceName = useRef();
+  const enteredWorkspaceURL = useRef();
+
+  const ctx = useContext(OnboardContext);
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+
+    ctx.addUser({
+      WorkspaceName: enteredWorkspaceName.current.value,
+      WorkspaceURL: `www.eden.com/${enteredWorkspaceURL.current.value}`,
+    });
+
+    ctx.nextStep();
+  };
+
   return (
     <div className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto text-center">
@@ -13,12 +31,17 @@ const SecondStepForm = () => {
         </p>
       </div>
 
-      <form action="" className="max-w-md mx-auto mt-8 mb-0 space-y-4">
+      <form
+        onSubmit={formSubmitHandler}
+        className="max-w-md mx-auto mt-8 mb-0 space-y-4"
+      >
         <div>
-          <label htmlFor="FullName">Workspace Name</label>
+          <label htmlFor="WorkspaceName">Workspace Name</label>
 
           <div className="relative">
             <input
+              ref={enteredWorkspaceName}
+              id="WorkspaceName"
               type="text"
               className="w-full mt-2 p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="Eden"
@@ -28,7 +51,7 @@ const SecondStepForm = () => {
 
         <div>
           <label htmlFor="website-url" className="">
-            Workspace URL{' '}
+            Workspace URL
             <span className="text-primary-gray-light">(optional)</span>
           </label>
           <div className="relative mt-2">
@@ -37,21 +60,13 @@ const SecondStepForm = () => {
                 www.eden.com/
               </div>
               <input
+                ref={enteredWorkspaceURL}
                 type="text"
                 placeholder="Example"
                 id="website-url"
                 className="w-full p-2.5 ml-2 text-sm rounded-lg outline-none border-none shadow-sm"
               />
             </div>
-
-            {/* <div className="px-3 py-2.5 rounded-l-md bg-gray-50 border-r">
-              https://
-            </div>
-            <input
-              type="text"
-              className="w-full mt-2 p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-              placeholder="Steve"
-            /> */}
           </div>
         </div>
 

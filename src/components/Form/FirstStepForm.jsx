@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useRef, useContext } from 'react';
+import OnboardContext from '../../store/onboard';
 
 const FirstStepForm = () => {
+  // console.log('On 1 Step');
+  const enteredFullName = useRef();
+  const enteredDisplayName = useRef();
+
+  const ctx = useContext(OnboardContext);
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+    ctx.addUser({
+      FullName: enteredFullName.current.value,
+      DisplayName: enteredDisplayName.current.value,
+    });
+    ctx.nextStep();
+  };
+
   return (
     <div className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto text-center">
@@ -13,12 +29,17 @@ const FirstStepForm = () => {
         </p>
       </div>
 
-      <form action="" className="max-w-md mx-auto mt-8 mb-0 space-y-4">
+      <form
+        onSubmit={formSubmitHandler}
+        className="max-w-md mx-auto mt-8 mb-0 space-y-4"
+      >
         <div>
           <label htmlFor="FullName">Full Name</label>
 
           <div className="relative">
             <input
+              ref={enteredFullName}
+              id="FullName"
               type="text"
               className="w-full mt-2 p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="Steve Jobs"
@@ -32,6 +53,8 @@ const FirstStepForm = () => {
           </label>
           <div className="relative">
             <input
+              ref={enteredDisplayName}
+              id="displayName"
               type="text"
               className="w-full mt-2 p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="Steve"
