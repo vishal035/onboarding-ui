@@ -4,7 +4,6 @@ import OnboardContext from '../../../store/onboard';
 const StepCount = () => {
   /** using Context Hook */
   const ctx = useContext(OnboardContext);
-  console.log(`${25 * ctx.onStep}%`);
 
   return (
     <div>
