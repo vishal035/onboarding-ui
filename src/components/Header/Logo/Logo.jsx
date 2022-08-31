@@ -1,5 +1,6 @@
 import React from 'react';
 
+/** Logo Box */
 const Logo = () => {
   return (
     <div className="relative w-32 my-8">

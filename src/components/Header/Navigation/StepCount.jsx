@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import OnboardContext from '../../../store/onboard';
 
 const StepCount = () => {
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
-  // console.log(ctx.onStep);
+
   return (
     <div>
       <h2 className="sr-only">Steps</h2>
@@ -14,8 +15,8 @@ const StepCount = () => {
             <span
               className={`w-8 h-8 text-base font-medium leading-8 border-[.5px] border-primary-gray-light text-center rounded-full ${
                 ctx.onStep >= 1
-                  ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-primary-black'
+                  ? 'bg-primary text-white' // Changing the Background Color and Text Color By Current Step Number
+                  : 'bg-gray-100 text-primary-black' // Fallback UI
               }`}
             >
               1
@@ -26,8 +27,8 @@ const StepCount = () => {
             <span
               className={`w-8 h-8 text-base font-medium leading-8 text-center border-[.5px] border-primary-gray-light rounded-full ${
                 ctx.onStep >= 2
-                  ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-primary-black'
+                  ? 'bg-primary text-white' // Changing the Background Color and Text Color By Current Step Number
+                  : 'bg-gray-100 text-primary-black' // Fallback UI
               }`}
             >
               2
@@ -38,8 +39,8 @@ const StepCount = () => {
             <span
               className={`w-8 h-8 text-base font-medium leading-8 text-center border-[.5px] border-primary-gray-light rounded-full ${
                 ctx.onStep >= 3
-                  ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-primary-black'
+                  ? 'bg-primary text-white' // Changing the Background Color and Text Color By Current Step Number
+                  : 'bg-gray-100 text-primary-black' // Fallback UI
               }`}
             >
               3
@@ -50,8 +51,8 @@ const StepCount = () => {
             <span
               className={`w-8 h-8 text-base font-medium leading-8 text-center border-[.5px] border-primary-gray-light rounded-full ${
                 ctx.onStep >= 4
-                  ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-primary-black'
+                  ? 'bg-primary text-white' // Changing the Background Color and Text Color By Current Step Number
+                  : 'bg-gray-100 text-primary-black' // Fallback UI
               }`}
             >
               4
