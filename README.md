@@ -2,7 +2,7 @@
 
 This project live link [Onboarding UI](https://onboarding-ui-ten.vercel.app/).
 
-## Demo Video
+Demo Video:
 
 https://github.com/vishal035/onboarding-ui/blob/master/public/demo.mp4
 
