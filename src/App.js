@@ -12,7 +12,7 @@ function App() {
   const ctx = useContext(OnboardContext);
 
   return (
-    <div className="font-sans w-screen bg-white flex flex-col items-center justify-center">
+    <div className="font-sans w-screen overflow-x-hidden bg-white flex flex-col items-center justify-center">
       <Logo />
       <div className="w-80 sm:w-96">
         <StepCount />
