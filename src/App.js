@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="font-sans w-screen bg-white flex flex-col items-center justify-center">
       <Logo />
-      <div className="w-96 mt-4">
+      <div className="w-80 sm:w-96">
         <StepCount />
       </div>
       <div className="">
