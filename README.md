@@ -1,8 +1,10 @@
 # Onboard UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project live link [Onboarding UI](https://onboarding-ui-ten.vercel.app/).
 
 ## Demo Video
+
+https://github.com/vishal035/onboarding-ui/blob/master/public/demo.mp4
 
 ## Available Scripts
 
