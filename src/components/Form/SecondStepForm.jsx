@@ -60,7 +60,7 @@ const SecondStepForm = () => {
             <span className="text-primary-gray-light">(optional)</span>
           </label>
           <div className="relative mt-2">
-            <div className="flex items-center text-gray-400 border rounded-lg ">
+            <div className="flex items-center text-primary-gray-light border rounded-lg ">
               <div className="px-3 py-2.5  rounded-l-md bg-gray-50 border-r">
                 www.eden.com/
               </div>
@@ -69,7 +69,7 @@ const SecondStepForm = () => {
                 type="text"
                 placeholder="Example"
                 id="website-url"
-                className="w-full p-2.5 ml-2 text-sm rounded-lg outline-none border-none shadow-sm"
+                className="w-full p-2.5 ml-2 text-sm text-primary-gray rounded-lg outline-none border-none shadow-sm"
               />
             </div>
           </div>
