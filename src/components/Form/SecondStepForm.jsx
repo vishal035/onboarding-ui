@@ -25,9 +25,9 @@ const SecondStepForm = () => {
   };
 
   return (
-    <div className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-6">
+    <div className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto text-center">
-        <h1 className="text-2xl font-bold sm:text-3xl text-primary-black">
+        <h1 className="text-2xl font-bold sm:text-2xl text-primary-black">
           Let's set up a home for all your work
         </h1>
 
