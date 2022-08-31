@@ -57,7 +57,7 @@ const ThirdStepForm = () => {
             />
             <label
               htmlFor="workspace-myselfy"
-              className="inline-flex justify-between items-center p-5 w-full text-primary-gray bg-white rounded-lg border-2 border-primary-gray cursor-pointer dark:border-primary-gray-light peer-checked:border-primary dark:hover:border-primary-black"
+              className="inline-flex justify-between items-center p-5 w-full text-primary-gray bg-white rounded-lg border-[1px] dark:border-2 border-primary-gray cursor-pointer dark:border-primary-gray-light peer-checked:border-primary dark:hover:border-primary-gray"
             >
               <div className="block">
                 <div className="relative w-7 mb-2">
@@ -90,7 +90,7 @@ const ThirdStepForm = () => {
             />
             <label
               htmlFor="workspace-team"
-              className="inline-flex justify-between items-center p-5 w-full text-primary-gray bg-white rounded-lg border-2 border-primary-gray cursor-pointer dark:border-primary-gray-light peer-checked:border-primary dark:hover:border-primary-black"
+              className="inline-flex justify-between items-center p-5 w-full text-primary-gray bg-white rounded-lg border-[1px] border-primary-gray dark:border-2 cursor-pointer dark:border-primary-gray-light peer-checked:border-primary dark:hover:border-primary-gray"
             >
               <div className="block">
                 <div className="relative w-7 mb-2">

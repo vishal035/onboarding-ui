@@ -17,7 +17,7 @@ function App() {
       <div className="w-80 sm:w-96">
         <StepCount />
       </div>
-      <div className="">
+      <div>
         {ctx.onStep === 1 && <FirstStepForm />}
         {ctx.onStep === 2 && <SecondStepForm />}
         {ctx.onStep === 3 && <ThirdStepForm />}
