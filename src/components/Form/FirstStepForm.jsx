@@ -70,7 +70,7 @@ const FirstStepForm = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="inline-block w-full px-5 py-3 text-sm font-medium text-white bg-blue-500 rounded-lg"
+            className="inline-block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg"
           >
             Create Workspace
           </button>
