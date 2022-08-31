@@ -1,13 +1,18 @@
 import React, { useContext, useRef } from 'react';
 import OnboardContext from '../../store/onboard';
 
+/**
+ * Second STep Onboard UI Component
+ */
 const SecondStepForm = () => {
   // console.log('On 2 Step');
   const enteredWorkspaceName = useRef();
   const enteredWorkspaceURL = useRef();
 
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
 
+  /** FORM Sumit Handler */
   const formSubmitHandler = (event) => {
     event.preventDefault();
 

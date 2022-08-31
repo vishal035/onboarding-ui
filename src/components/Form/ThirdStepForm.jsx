@@ -1,16 +1,22 @@
 import React, { useContext, useState } from 'react';
 import OnboardContext from '../../store/onboard';
 
+/**
+ * Third STep Onboard UI Component
+ */
 const ThirdStepForm = () => {
   // console.log('On 3 Step');
   const [workspaceFor, setWorfspaceFor] = useState('workspace-myselfy');
 
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
 
-  const workspaceSeletctHandler = (event) => {
-    setWorfspaceFor(event.target.value);
-  };
+  /** Listening to Radio Input onChange */
+  // const workspaceSeletctHandler = (event) => {
+  //   setWorfspaceFor(event.target.value);
+  // };
 
+  /** FORM Sumit Handler */
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
@@ -45,7 +51,7 @@ const ThirdStepForm = () => {
               name="workspace"
               value="workspace-myselfy"
               className="hidden peer"
-              onChange={workspaceSeletctHandler}
+              onChange={(event) => setWorfspaceFor(event.target.value)}
               defaultChecked="true"
               required
             />
@@ -76,7 +82,7 @@ const ThirdStepForm = () => {
               name="workspace"
               value="workspace-team"
               className="hidden peer"
-              onChange={workspaceSeletctHandler}
+              onChange={(event) => setWorfspaceFor(event.target.value)}
             />
             <label
               htmlFor="workspace-team"

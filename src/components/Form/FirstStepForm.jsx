@@ -1,13 +1,18 @@
 import React, { useRef, useContext } from 'react';
 import OnboardContext from '../../store/onboard';
 
+/**
+ * First STep Onboard UI Component
+ */
 const FirstStepForm = () => {
   // console.log('On 1 Step');
   const enteredFullName = useRef();
   const enteredDisplayName = useRef();
 
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
 
+  /** FORM Sumit Handler */
   const formSubmitHandler = (event) => {
     event.preventDefault();
     ctx.addUser({

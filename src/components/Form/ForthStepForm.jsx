@@ -1,10 +1,16 @@
 import React, { useContext } from 'react';
 import OnboardContext from '../../store/onboard';
 
+/**
+ * Forth STep Onboard UI Component
+ */
 const ForthStepForm = () => {
   // console.log('On 4 Step');
+
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
 
+  /** FORM Sumit Handler */
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
