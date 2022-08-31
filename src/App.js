@@ -8,6 +8,7 @@ import ForthStepForm from './components/Form/ForthStepForm';
 import OnboardContext from './store/onboard';
 
 function App() {
+  /** using Context Hook */
   const ctx = useContext(OnboardContext);
 
   return (
