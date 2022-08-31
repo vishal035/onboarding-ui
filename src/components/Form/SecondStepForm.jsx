@@ -54,7 +54,7 @@ const SecondStepForm = () => {
           </div>
         </div>
 
-        <div>
+        <div className="pt-1">
           <label htmlFor="website-url" className="">
             Workspace URL
             <span className="text-primary-gray-light">(optional)</span>
@@ -75,7 +75,7 @@ const SecondStepForm = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pt-2">
           <button
             type="submit"
             className="inline-block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg"

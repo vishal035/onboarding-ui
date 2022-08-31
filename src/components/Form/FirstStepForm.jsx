@@ -52,10 +52,8 @@ const FirstStepForm = () => {
           </div>
         </div>
 
-        <div>
-          <label htmlFor="displayName" className="">
-            Display Name
-          </label>
+        <div className="pt-1">
+          <label htmlFor="displayName">Display Name</label>
           <div className="relative">
             <input
               ref={enteredDisplayName}
@@ -67,7 +65,7 @@ const FirstStepForm = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pt-2">
           <button
             type="submit"
             className="inline-block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg"

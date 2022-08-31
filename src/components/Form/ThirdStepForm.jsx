@@ -114,7 +114,7 @@ const ThirdStepForm = () => {
           </li>
         </ul>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pt-2">
           <button
             type="submit"
             className="inline-block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg"
